@@ -1,0 +1,127 @@
+.header {
+    width: 100%;
+    background-color: #111;
+}
+
+.header header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff0080;
+    opacity: 0.7;
+}
+
+.menu a:active {
+    opacity: 0.5;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        display: none;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Unbounded', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+     
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto; 
+    max-width: 45%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #ff00ff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 40px #ff00ff88;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff0080;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite alternate;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@keyframes pulse {
+    from { text-shadow: 0 0 10px #ff0080; }
+    to { text-shadow: 0 0 30px #ff0080; }
+}
+
