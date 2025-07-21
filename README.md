@@ -29,8 +29,6 @@ Minha contribuição foi criar a **interface visual do site** utilizando HTML e 
 
 ---
 
-## 🚀 Como visualizar
+## Você pode visualizar meu site em:
 
-1. Clone ou baixe este repositório:
-```bash
-git clone https://github.com/seuusuario/seurepositorio.git
+https://adriciachiarini.github.io/Pag-MGEO-ART/
